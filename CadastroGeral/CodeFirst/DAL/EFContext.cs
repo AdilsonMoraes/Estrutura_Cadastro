@@ -8,7 +8,7 @@ namespace CodeFirst.DAL
 {
     public class EFContext : DbContext
     {
-        public EFContext() : base("Cadastro_Funcionario") { }
+        public EFContext() : base("") { }
 
         //Romove a convenção para nao ficar pluralizando as tabelas na criação
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -18,10 +18,11 @@ namespace CodeFirst.DAL
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Pessoa> Cad_Pessoas { get; set; }
-        public DbSet<Funcionario> Cad_Funcionario { get; set; }
-        public DbSet<Funcionario> Cad_Motorista { get; set; }
-        public DbSet<Funcionario> Cad_Veiculo { get; set; }
 
+        //Quero que seja criado um banco com o nome de Cadastro_Geral
+        
+        /*Quero que as tabelas sejam criadas no padrão abaixo.
+        Cad_Pessoas, Cad_Funcionario, Cad_Motorista, Cad_Veiculo*/
+        
     }
 }
