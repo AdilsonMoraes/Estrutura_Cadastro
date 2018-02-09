@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CodeFirst.Models;
+using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Web;
+
 
 namespace CodeFirst.DAL
 {
@@ -19,8 +18,10 @@ namespace CodeFirst.DAL
             base.OnModelCreating(modelBuilder);
         }
 
-        //public DbSet<Pessoa> Cad_Pessoas { get; set; }
-        //public DbSet<Funcionario> Cad_Funcionario { get; set; }
+        public DbSet<Pessoa> Cad_Pessoas { get; set; }
+        public DbSet<Funcionario> Cad_Funcionario { get; set; }
+        public DbSet<Funcionario> Cad_Motorista { get; set; }
+        public DbSet<Funcionario> Cad_Veiculo { get; set; }
 
     }
 }
