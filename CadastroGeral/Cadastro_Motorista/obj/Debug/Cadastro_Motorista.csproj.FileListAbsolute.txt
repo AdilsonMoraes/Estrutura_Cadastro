@@ -1,0 +1,13 @@
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Motorista.exe.config
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Motorista.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Motorista.pdb
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Funcionario.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Pessoa.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Funcionario.pdb
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Funcionario.exe.config
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Pessoa.pdb
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\bin\Debug\Cadastro_Pessoa.exe.config
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\obj\Debug\Cadastro_Motorista.csprojResolveAssemblyReference.cache
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\obj\Debug\Cadastro_Motorista.csproj.CoreCompileInputs.cache
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\obj\Debug\Cadastro_Motorista.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Motorista\obj\Debug\Cadastro_Motorista.pdb

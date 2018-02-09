@@ -1,0 +1,10 @@
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Funcionario.exe.config
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Funcionario.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Funcionario.pdb
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Pessoa.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Pessoa.pdb
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\bin\Debug\Cadastro_Pessoa.exe.config
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\obj\Debug\Cadastro_Funcionario.csprojResolveAssemblyReference.cache
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\obj\Debug\Cadastro_Funcionario.csproj.CoreCompileInputs.cache
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\obj\Debug\Cadastro_Funcionario.exe
+C:\Users\adilson.moreira\source\repos\CadastroGeral\Cadastro_Funcionario\obj\Debug\Cadastro_Funcionario.pdb
