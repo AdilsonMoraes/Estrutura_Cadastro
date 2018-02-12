@@ -1,0 +1,7 @@
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\bin\Debug\FuncoesGenericas.exe.config
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\bin\Debug\FuncoesGenericas.exe
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\bin\Debug\FuncoesGenericas.pdb
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\obj\Debug\FuncoesGenericas.csprojResolveAssemblyReference.cache
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\obj\Debug\FuncoesGenericas.csproj.CoreCompileInputs.cache
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\obj\Debug\FuncoesGenericas.exe
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\FuncoesGenericas\obj\Debug\FuncoesGenericas.pdb

@@ -3,10 +3,19 @@ using System;
 
 namespace Cadastro_Funcionario
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+
     public class Funcionario : Pessoa
     {
         public int FuncionarioID { get; set; }
         public string Cargo { get; set; }
+        public int CodNivel { get; set; }
         public string Nivel { get; set; }
         public double SalarioInicial { get; set; }
         public DateTime DataAdmissao { get; set; }

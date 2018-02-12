@@ -7,5 +7,7 @@ namespace CodeFirst.Models
 {
     public class Motorista
     {
+        public int MotoristaID { get; set; }
+        public int VeiculoID { get; set; }
     }
 }

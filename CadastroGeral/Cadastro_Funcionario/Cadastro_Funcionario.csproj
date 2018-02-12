@@ -42,9 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO.cs" />
-    <Compile Include="Funcionario.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="UI\Funcionario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +53,14 @@
       <Project>{3684d04c-e63a-406c-823f-8bc4b5175553}</Project>
       <Name>Cadastro_Pessoa</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FuncoesGenericas\FuncoesGenericas.csproj">
+      <Project>{7b6dd5b4-7e5c-4047-abb1-b6c9a14d1cd3}</Project>
+      <Name>FuncoesGenericas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAcessObject\" />
+    <Folder Include="Negocio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

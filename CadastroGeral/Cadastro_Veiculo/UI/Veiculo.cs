@@ -2,6 +2,14 @@
 
 namespace Cadastro_Veiculo
 {
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+
     public class Veiculo
     {
         public int VeiculoID { get; set; }

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{062C6622-7D20-4C44-8FCF-C87CE380E327}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Principal</RootNamespace>
+    <AssemblyName>Principal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cadastro_Funcionario\Cadastro_Funcionario.csproj">
+      <Project>{003b1cc0-da93-453b-a1d9-8c3630054d63}</Project>
+      <Name>Cadastro_Funcionario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadastro_Motorista\Cadastro_Motorista.csproj">
+      <Project>{b7fcd7cf-0ae7-438a-aa11-3efb67a5f814}</Project>
+      <Name>Cadastro_Motorista</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadastro_Pessoa\Cadastro_Pessoa.csproj">
+      <Project>{3684d04c-e63a-406c-823f-8bc4b5175553}</Project>
+      <Name>Cadastro_Pessoa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadastro_Veiculo\Cadastro_Veiculo.csproj">
+      <Project>{01cbf791-a580-4efc-8d8d-9ba166122663}</Project>
+      <Name>Cadastro_Veiculo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FuncoesGenericas\FuncoesGenericas.csproj">
+      <Project>{7b6dd5b4-7e5c-4047-abb1-b6c9a14d1cd3}</Project>
+      <Name>FuncoesGenericas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -2,6 +2,13 @@
 
 namespace Cadastro_Motorista
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+
     public class Motorista : Funcionario
     {
         public int MotoristaID { get; set; }
