@@ -1,4 +1,5 @@
 ﻿using Cadastro_Pessoa.Negocio;
+
 using System;
 
 namespace Cadastro_Pessoa.UI
@@ -11,23 +12,26 @@ namespace Cadastro_Pessoa.UI
             Console.WriteLine("[1] - Consulta, " +
                               "[2] - Inserir, " +
                               "[3] - Deletar ");
-            var Funcao = Console.ReadLine();
+            var funcao = Console.ReadLine();
 
-            Console.WriteLine("Informe um Nome:");
-            Funcao = Console.ReadLine();
+            FuncoesGenericas.FuncoesGenericas.ValidaNumero(funcao);
 
-            Pessoa pessoa = new Pessoa();
-            pessoa.Nome = "TESTE";
-            pessoa.Rg = "4666565";
-            pessoa.Cpf = "52231564687";
-            pessoa.Email = "545642@sdsds";
-            pessoa.Telefone = "5453434532";
-            pessoa.FlAtivo = "S";
+
+            //Console.WriteLine("Informe um Nome:");
+            //Funcao = Console.ReadLine();
+
+            //Pessoa pessoa = new Pessoa();
+            //pessoa.Nome = "TESTE";
+            //pessoa.Rg = "4666565";
+            //pessoa.Cpf = "52231564687";
+            //pessoa.Email = "545642@sdsds";
+            //pessoa.Telefone = "5453434532";
+            //pessoa.FlAtivo = "S";
             
-            int x = NegPessoa.Salvar(pessoa);
+            //int x = NegPessoa.Salvar(pessoa);
        
-            Console.WriteLine("");
-            Console.ReadKey();
+            //Console.WriteLine("");
+            //Console.ReadKey();
         }
     }
 }
