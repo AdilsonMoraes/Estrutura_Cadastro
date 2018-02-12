@@ -54,6 +54,11 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FuncoesGenericas\FuncoesGenericas.csproj">
+      <Project>{7b6dd5b4-7e5c-4047-abb1-b6c9a14d1cd3}</Project>
+      <Name>FuncoesGenericas</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

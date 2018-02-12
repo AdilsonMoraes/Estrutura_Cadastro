@@ -12,3 +12,6 @@ C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\obj\Debug\Cadastro_Pessoa.csproj.CoreCompileInputs.cache
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\obj\Debug\Cadastro_Pessoa.exe
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\obj\Debug\Cadastro_Pessoa.pdb
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\bin\Debug\FuncoesGenericas.exe
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\bin\Debug\FuncoesGenericas.pdb
+C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Pessoa\bin\Debug\FuncoesGenericas.exe.config
