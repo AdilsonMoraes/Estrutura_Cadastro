@@ -20,7 +20,7 @@ namespace Cadastro_Funcionario
         public double SalarioInicial { get; set; }
         public DateTime DataAdmissao { get; set; }
         public DateTime DataDemissao { get; set; }
-        public string FlAtivo { get; set; }
+        public string FlFuncAtivo { get; set; }
     }
 
     public abstract class Salario : Funcionario
