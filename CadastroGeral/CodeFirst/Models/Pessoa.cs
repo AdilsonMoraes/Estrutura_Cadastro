@@ -13,6 +13,6 @@ namespace CodeFirst.Models
         public string Cpf { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
-        public bool FlAtivo { get; set; }
+        public string FlAtivo { get; set; }
     }
 }

@@ -104,6 +104,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802131949519_PrimaryDB.cs" />
+    <Compile Include="Migrations\201802131949519_PrimaryDB.Designer.cs">
+      <DependentUpon>201802131949519_PrimaryDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Motorista.cs" />
     <Compile Include="Models\Pessoa.cs" />
@@ -123,6 +128,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802131949519_PrimaryDB.resx">
+      <DependentUpon>201802131949519_PrimaryDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

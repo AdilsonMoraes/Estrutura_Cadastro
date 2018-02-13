@@ -115,7 +115,7 @@ namespace Cadastro_Pessoa.DataAcessObject
                 {
                     comando.Connection = conexao;
 
-                    comando.CommandText = "INSERT INTO Pessoa (NOME, RG, CPF, EMAIL, TELEFONE, FLATIVO) " +
+                    comando.CommandText = "INSERT INTO Pessoa (NOME, RG, CPF, EMAIL, TELEFONE, FlPessoaAtivo) " +
                         "VALUES (@nome, @rg, @cpf, @email, @telefone, @flativo); select convert(int, scope_identity());";
 
                     comando.Parameters.Add("@nome", SqlDbType.VarChar).Value = paramPessoa.Nome;
@@ -123,7 +123,7 @@ namespace Cadastro_Pessoa.DataAcessObject
                     comando.Parameters.Add("@cpf", SqlDbType.VarChar).Value = paramPessoa.Cpf;
                     comando.Parameters.Add("@email", SqlDbType.VarChar).Value = paramPessoa.Email;
                     comando.Parameters.Add("@telefone", SqlDbType.VarChar).Value = paramPessoa.Telefone;
-                    comando.Parameters.Add("@flativo", SqlDbType.VarChar).Value = paramPessoa.FlAtivo;
+                    comando.Parameters.Add("@FlAtivo", SqlDbType.VarChar).Value = paramPessoa.FlAtivo;
 
                     ret = (int)comando.ExecuteScalar(); //ExecuteScalar retorna um object, convertido para inteiro
                 }
