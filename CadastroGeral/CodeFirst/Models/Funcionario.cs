@@ -13,6 +13,6 @@ namespace CodeFirst.Models
         public double SalarioInicial { get; set; }
         public DateTime DataAdmissao { get; set; }
         public DateTime DataDemissao { get; set; }
-        public bool FlAtivo { get; set; }
+        public string FlAtivo { get; set; }
     }
 }
