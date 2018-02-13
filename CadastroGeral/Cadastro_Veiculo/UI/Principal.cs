@@ -4,12 +4,18 @@ using System;
 
 namespace Cadastro_Veiculo.UI
 {
-    class ProgramVeiculo
+    public class ProgramVeiculo
     {
         enum OpecaoSelecionada { AnulaZero, Consulta, Insere, Deleta, Sair };
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Show();
+        }
+
+        public static void Show()
+        {
+            #region Show
             Inicio:
             string retorno = MensagensPadrao.StringEmBranco;
             string readline = MensagensPadrao.StringEmBranco;
@@ -174,7 +180,7 @@ namespace Cadastro_Veiculo.UI
             Console.Write(retorno);
             Console.ReadKey();
             goto Inicio;
-
+            #endregion
         }
     }
 }

@@ -10,6 +10,12 @@ namespace Cadastro_Pessoa.UI
 
         static void Main(string[] args)
         {
+            Show();
+        }
+
+        public static void Show()
+        {
+            #region Show
             Inicio:
             string retorno = MensagensPadrao.StringEmBranco;
             string readline = MensagensPadrao.StringEmBranco;
@@ -174,6 +180,7 @@ namespace Cadastro_Pessoa.UI
             Console.Write(retorno);
             Console.ReadKey();
             goto Inicio;
+            #endregion
         }
     }
 }

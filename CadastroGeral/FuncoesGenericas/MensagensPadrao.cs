@@ -23,6 +23,10 @@
         #endregion
 
         #region Comuns
+
+        public const string MenuPrincipal = "[1] - Cadastro de Pessoa, [2] - Cadastro de Funcionario, [3] - Cadastro de Veiculo, [4] - Cadastro de Motorista";
+        public const string TitlePrincipal = "Cadastro Geral";
+
         public const string InseridoOK = "Registro Inserido com Sucesso! ";
         public const string InseridoNOK = "Registro Não Inserido, Favor Verificar! ";
         public const string RegistroNaoEncontrado = "Registro não Encontrado! ";
