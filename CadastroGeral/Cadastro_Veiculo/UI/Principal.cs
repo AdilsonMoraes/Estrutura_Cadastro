@@ -1,10 +1,10 @@
-﻿using Cadastro_Pessoa.Negocio;
+﻿using Cadastro_Veiculo.Negocio;
 using FuncoesGenericas;
 using System;
 
-namespace Cadastro_Pessoa.UI
+namespace Cadastro_Veiculo.UI
 {
-    public class ProgramPessoa
+    class ProgramVeiculo
     {
         enum OpecaoSelecionada { AnulaZero, Consulta, Insere, Deleta, Sair };
 
@@ -15,7 +15,7 @@ namespace Cadastro_Pessoa.UI
             string readline = MensagensPadrao.StringEmBranco;
             int opcaomenu = 0;
 
-            Console.Title = MensagensPadrao.TitlePessoa;
+            Console.Title = MensagensPadrao.TitleVeiculo;
             while (readline == MensagensPadrao.StringEmBranco)
             {
                 Console.WriteLine("[1] - Consulta, " +
@@ -40,23 +40,23 @@ namespace Cadastro_Pessoa.UI
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Consulta))
             {
-                #region ConsultaPessoa
+                #region ConsultaVeiculo
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.FormaDeConsultarPessoa);
+                    Console.WriteLine(MensagensPadrao.FormaDeConsultaVeiculo);
                     readline = Console.ReadLine();
                 }
 
                 if (readline.ToUpper() == "S")
                 {
-                    Console.WriteLine(MensagensPadrao.InformeNome);
+                    Console.WriteLine(MensagensPadrao.InformeModelo);
                     readline = Console.ReadLine();
-                    Pessoa ret = NegPessoa.RecuperarPeloNome(readline.ToUpper());
+                    Veiculo ret = negVeiculo.RecuperarPeloModelo(readline.ToUpper());
 
                     if (ret != null)
                     {
-                        retorno = NegPessoa.MontaRetorno(ret);
+                        retorno = negVeiculo.MontaRetorno(ret);
                     }
                     else
                     {
@@ -66,11 +66,11 @@ namespace Cadastro_Pessoa.UI
                 }
                 else
                 {
-                    var ret = NegPessoa.RecuperarLista();
+                    var ret = negVeiculo.RecuperarLista();
 
                     if (ret != null)
                     {
-                        retorno = NegPessoa.MontaRetorno(ret);
+                        retorno = negVeiculo.MontaRetorno(ret);
                     }
                     else
                     {
@@ -82,54 +82,54 @@ namespace Cadastro_Pessoa.UI
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Insere))
             {
-                #region InsertPessoa
-                Pessoa pessoa = new Pessoa();
+                #region InsertVeiculo
+                Veiculo objveiculo = new Veiculo();
 
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeNome);
+                    Console.WriteLine(MensagensPadrao.InformeMarca);
                     readline = Console.ReadLine();
                 }
-                pessoa.Nome = readline.ToUpper();
+                objveiculo.Marca = readline.ToUpper();
 
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeRg);
+                    Console.WriteLine(MensagensPadrao.InformeModelo);
                     readline = Console.ReadLine();
                 }
-                pessoa.Rg = readline.ToUpper();
+                objveiculo.Modelo = readline.ToUpper();
 
 
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeCpf);
+                    Console.WriteLine(MensagensPadrao.InformeCor);
                     readline = Console.ReadLine();
                 }
-                pessoa.Cpf = readline.ToUpper();
+                objveiculo.Cor = readline.ToUpper();
 
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeEmail);
+                    Console.WriteLine(MensagensPadrao.InformePlaca);
                     readline = Console.ReadLine();
                 }
-                pessoa.Email = readline.ToUpper();
+                objveiculo.Placa = readline.ToUpper();
 
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeTelefone);
+                    Console.WriteLine(MensagensPadrao.InformeAnoModeloVeiculo);
                     readline = Console.ReadLine();
                 }
-                pessoa.Telefone = readline.ToUpper();
-                pessoa.FlAtivo = MensagensPadrao.FlAtivoS.ToUpper();
+                objveiculo.AnoModeloVeiculo = readline.ToUpper();
+                objveiculo.FlAtivo = MensagensPadrao.FlAtivoS.ToUpper();
 
-                int pessoaIdinserido = NegPessoa.Salvar(pessoa);
+                int veiculoIdinserido = negVeiculo.Salvar(objveiculo);
 
-                if (pessoaIdinserido > 0)
+                if (veiculoIdinserido > 0)
                 {
                     retorno = MensagensPadrao.InseridoOK;
                 }
@@ -142,16 +142,16 @@ namespace Cadastro_Pessoa.UI
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Deleta))
             {
-                #region DeletePessoa
+                #region DeleteVeiculo
                 bool ret = false;
                 readline = MensagensPadrao.StringEmBranco;
                 while (readline == MensagensPadrao.StringEmBranco)
                 {
-                    Console.WriteLine(MensagensPadrao.InformeNome);
+                    Console.WriteLine(MensagensPadrao.InformeModelo);
                     readline = Console.ReadLine();
                 }
 
-                ret = NegPessoa.ExcluirPeloNome(readline.ToUpper());
+                ret = negVeiculo.ExcluirPeloModelo(readline.ToUpper());
 
                 if (ret)
                 {
@@ -174,6 +174,7 @@ namespace Cadastro_Pessoa.UI
             Console.Write(retorno);
             Console.ReadKey();
             goto Inicio;
+
         }
     }
 }

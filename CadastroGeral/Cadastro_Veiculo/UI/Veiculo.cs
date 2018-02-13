@@ -3,14 +3,7 @@
 namespace Cadastro_Veiculo
 {
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-
-    public class Veiculo
+     public class Veiculo
     {
         public int VeiculoID { get; set; }
         public string Marca { get; set; }
@@ -20,4 +13,5 @@ namespace Cadastro_Veiculo
         public string AnoModeloVeiculo { get; set; }
         public string FlAtivo { get; set; }
     }
+
 }

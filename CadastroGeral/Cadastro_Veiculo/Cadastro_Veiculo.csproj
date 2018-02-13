@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,21 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAcessObject\DAO.cs" />
+    <Compile Include="Negocio\negVeiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Principal.cs" />
     <Compile Include="UI\Veiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Cadastro_Funcionario\Cadastro_Funcionario.csproj">
-      <Project>{003b1cc0-da93-453b-a1d9-8c3630054d63}</Project>
-      <Name>Cadastro_Funcionario</Name>
+    <ProjectReference Include="..\FuncoesGenericas\FuncoesGenericas.csproj">
+      <Project>{7b6dd5b4-7e5c-4047-abb1-b6c9a14d1cd3}</Project>
+      <Name>FuncoesGenericas</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAcessObject\" />
-    <Folder Include="Negocio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

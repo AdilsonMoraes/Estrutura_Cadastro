@@ -9,7 +9,17 @@
         public const string InformeCpf = "Informe o CPF: ";
         public const string InformeEmail = "Informe o Email: ";
         public const string InformeTelefone = "Informe o Telefone: ";
-        public const string FlAtivo = "S";
+        public const string FormaDeConsultarPessoa = "Deseja Consultar Pelo Nome ? [S] [N] ";
+        #endregion
+
+        #region Cadastro_Veiculo
+        public const string TitleVeiculo = "Cadastro de Veiculos";
+        public const string InformeMarca = "Informe a Modelo do Veiculo: ";
+        public const string InformeModelo = "Informe o Modelo: ";
+        public const string InformeCor = "Informe a Cor: ";
+        public const string InformePlaca = "Informe a Placa: ";
+        public const string InformeAnoModeloVeiculo = "Informe o Ano/Modelo do Veiculo: ";
+        public const string FormaDeConsultaVeiculo = "Deseja Consultar Pelo Modelo do Veiculo ? [S] [N] ";
         #endregion
 
         #region Comuns
@@ -18,9 +28,10 @@
         public const string RegistroNaoEncontrado = "Registro não Encontrado! ";
         public const string DeleteOK = "Registro Deletado com Sucesso! ";
         public const string StringEmBranco = "";
-        public const string FormaDeConsultar = "Deseja Consultar Pelo Nome ? [S] [N] ";
         public const string Errodigitacao = "Digite um Numero 1, 2, 3 ou 4: ";
         public const string OpcaoInvalida = "Opção Inválida: ";
+        public const string FlAtivoS = "S";
+        public const string FlAtivoN = "N";
         #endregion
 
     }

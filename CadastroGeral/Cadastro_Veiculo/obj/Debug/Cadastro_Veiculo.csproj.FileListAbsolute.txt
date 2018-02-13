@@ -18,12 +18,6 @@ C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Veiculo.exe.config
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Veiculo.exe
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Veiculo.pdb
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Funcionario.exe
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Pessoa.exe
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Funcionario.pdb
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Funcionario.exe.config
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Pessoa.pdb
-C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\Cadastro_Pessoa.exe.config
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\FuncoesGenericas.exe
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\FuncoesGenericas.pdb
 C:\Users\adilson.moreira\Documents\GitHub\Estrutura_Cadastro\Estrutura_Cadastro\CadastroGeral\Cadastro_Veiculo\bin\Debug\FuncoesGenericas.exe.config
