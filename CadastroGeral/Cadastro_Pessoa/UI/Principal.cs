@@ -1,29 +1,31 @@
 ﻿using Cadastro_Pessoa.Negocio;
+using FuncoesGenericas;
 using System;
 
 namespace Cadastro_Pessoa.UI
 {
     public class ProgramPessoa
     {
-        enum OpecaoSelecionada { AnulaZero, Consulta, Insere, Deleta };
+        enum OpecaoSelecionada { AnulaZero, Consulta, Insere, Deleta, Sair };
 
         static void Main(string[] args)
         {
-            string readline = "";
+            Inicio:
+            string retorno = MensagensPadrao.StringEmBranco;
+            string readline = MensagensPadrao.StringEmBranco;
             int opcaomenu = 0;
-            string retorno = "";
 
-            Console.WriteLine("************************** Pessoa **************************");
-
-
-            while (readline == "")
+            Console.Title = MensagensPadrao.TitlePessoa;
+            while (readline == MensagensPadrao.StringEmBranco)
             {
                 Console.WriteLine("[1] - Consulta, " +
                                   "[2] - Inserir, " +
-                                  "[3] - Deletar ");
+                                  "[3] - Deletar, " +
+                                  "[4] - Sair");
+
                 readline = Console.ReadLine();
 
-                string err = FuncoesGenericas.FuncoesGenericas.MenuValido(readline);
+                string err = Funcoes.MenuValido(readline);
 
                 if (err != "")
                 {
@@ -38,22 +40,27 @@ namespace Cadastro_Pessoa.UI
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Consulta))
             {
-                Console.WriteLine("Deseja Consultar Pelo Nome ? [S] [N]");
-                readline = Console.ReadLine();
+                #region ConsultaPessoa
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.FormaDeConsultar);
+                    readline = Console.ReadLine();
+                }
 
                 if (readline.ToUpper() == "S")
                 {
-                    Console.WriteLine("Digite o Nome do Cidadão: ");
+                    Console.WriteLine(MensagensPadrao.InformeNome);
                     readline = Console.ReadLine();
                     Pessoa ret = NegPessoa.RecuperarPeloNome(readline.ToUpper());
 
                     if (ret != null)
                     {
-                        retorno = "Nome: " + ret.Nome + " Telefone: " + ret.Telefone;
+                        retorno = NegPessoa.MontaRetorno(ret);
                     }
                     else
                     {
-                        retorno = "Sem Registro !";
+                        retorno = MensagensPadrao.RegistroNaoEncontrado;
                     }
 
                 }
@@ -63,44 +70,110 @@ namespace Cadastro_Pessoa.UI
 
                     if (ret != null)
                     {
-                        foreach (var item in ret)
-                        {
-                            retorno = retorno + "Nome: " + item.Nome + " Telefone: " + item.Telefone + "\n" + "\n";
-                        }
+                        retorno = NegPessoa.MontaRetorno(ret);
                     }
                     else
                     {
-                        retorno = "Sem Registro !";
+                        retorno = MensagensPadrao.RegistroNaoEncontrado;
                     }
-
-
                 }
-
+                #endregion
             }
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Insere))
             {
+                #region InsertPessoa
+                Pessoa pessoa = new Pessoa();
 
-                //Pessoa pessoa = new Pessoa();
-                //pessoa.Nome = "TESTE";
-                //pessoa.Rg = "4666565";
-                //pessoa.Cpf = "52231564687";
-                //pessoa.Email = "545642@sdsds";
-                //pessoa.Telefone = "5453434532";
-                //pessoa.FlAtivo = "S";
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeNome);
+                    readline = Console.ReadLine();
+                }
+                pessoa.Nome = readline.ToUpper();
 
-                //int x = NegPessoa.Salvar(pessoa);
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeRg);
+                    readline = Console.ReadLine();
+                }
+                pessoa.Rg = readline.ToUpper();
+
+
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeCpf);
+                    readline = Console.ReadLine();
+                }
+                pessoa.Cpf = readline.ToUpper();
+
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeEmail);
+                    readline = Console.ReadLine();
+                }
+                pessoa.Email = readline.ToUpper();
+
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeTelefone);
+                    readline = Console.ReadLine();
+                }
+                pessoa.Telefone = readline.ToUpper();
+                pessoa.FlAtivo = MensagensPadrao.FlAtivo.ToUpper();
+
+                int pessoaIdinserido = NegPessoa.Salvar(pessoa);
+
+                if (pessoaIdinserido > 0)
+                {
+                    retorno = MensagensPadrao.InseridoOK;
+                }
+                else
+                {
+                    retorno = MensagensPadrao.InseridoNOK;
+                }
+                #endregion
             }
 
             if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Deleta))
             {
+                #region DeletePessoa
+                bool ret = false;
+                readline = MensagensPadrao.StringEmBranco;
+                while (readline == MensagensPadrao.StringEmBranco)
+                {
+                    Console.WriteLine(MensagensPadrao.InformeNome);
+                    readline = Console.ReadLine();
+                }
 
+                ret = NegPessoa.ExcluirPeloNome(readline.ToUpper());
+
+                if (ret)
+                {
+                    retorno = MensagensPadrao.DeleteOK;
+                }
+                else
+                {
+                    retorno = MensagensPadrao.RegistroNaoEncontrado;
+                }
+                #endregion
+            }
+
+            if (opcaomenu == Convert.ToInt32(OpecaoSelecionada.Sair))
+            {
+                #region Sair
+                Environment.Exit(1);
+                #endregion
             }
 
             Console.Write(retorno);
             Console.ReadKey();
-
-
+            goto Inicio;
         }
     }
 }

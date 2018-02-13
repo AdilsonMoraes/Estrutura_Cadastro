@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 namespace FuncoesGenericas
 {
 
-    public class FuncoesGenericas
+    public class Funcoes
     {
-
-
         public static int SubtrairData(DateTime pData)
         {
             DateTime dt2 = DateTime.Now;
@@ -42,24 +40,23 @@ namespace FuncoesGenericas
 
         public static string MenuValido(string pString)
         {
-            string ErrMsg = "";
+            string ErrMsg = MensagensPadrao.StringEmBranco;
 
             if (ValidaNumero(pString) == false)
             {
-                ErrMsg = "Digite um Numero 1, 2 ou 3 :";
+                ErrMsg = MensagensPadrao.Errodigitacao;
             }
             else
             {
-                if (Convert.ToInt32(pString) > 3)
+                if (Convert.ToInt32(pString) > 4)
                 {
-                    ErrMsg = "Opção Inválida: ";
+                    ErrMsg = MensagensPadrao.OpcaoInvalida;
 
                 }
             }
 
             return ErrMsg;
         }
-
 
     }
 }
